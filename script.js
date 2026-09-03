@@ -23,12 +23,6 @@ document.querySelectorAll('[data-tab-link]').forEach(el => {
 });
 navToggle.addEventListener('click', () => tabsNav.classList.toggle('open'));
 
-/* ===================== HEADER: SÓLIDO AL HACER SCROLL ===================== */
-const header = document.getElementById('site-header');
-window.addEventListener('scroll', () => {
-  header.classList.toggle('solid', window.scrollY > 40);
-});
-
 /* ===================== HERO SLIDER ===================== */
 /* Fotografía real del local provista por el cliente. Se usa como única imagen confirmada;
    si el negocio entrega más fotos reales de producto/ambiente, agregar aquí como slides adicionales. */

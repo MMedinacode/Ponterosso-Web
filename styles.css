@@ -43,14 +43,14 @@ button{ font:inherit; cursor:pointer; border:none; background:none; color:inheri
 /* ============ HEADER ============ */
 .site-header{
   position:fixed; inset:0 0 auto 0; z-index:60;
-  transition:background-color .3s ease;
+  background:rgba(38,25,15,.95); backdrop-filter:blur(8px);
+  box-shadow:0 4px 20px rgba(0,0,0,.15);
 }
 .flag-bar{ height:4px; background:linear-gradient(90deg, var(--verde) 0 33.33%, var(--crema) 33.33% 66.66%, var(--rojo) 66.66% 100%); }
 .header-inner{
   max-width:1200px; margin:0 auto; padding:14px 20px;
   display:flex; align-items:center; justify-content:space-between;
 }
-.site-header.solid{ background:rgba(38,25,15,.95); backdrop-filter:blur(8px); }
 .brand{ display:flex; align-items:center; gap:10px; }
 .brand img{ width:44px; height:44px; border-radius:50%; object-fit:cover; }
 .brand span{ font-family:var(--font-logo); letter-spacing:.06em; color:var(--crema); font-size:1rem; }
@@ -109,9 +109,8 @@ button{ font:inherit; cursor:pointer; border:none; background:none; color:inheri
 .hero-dot.active{ background:var(--dorado); width:20px; border-radius:4px; }
 
 /* ============ SECTION GENERIC ============ */
-.section{ padding:110px 20px; max-width:1200px; margin:0 auto; }
+.section{ padding:150px 20px 110px; max-width:1200px; margin:0 auto; }
 .section-dark{ background:var(--marron); color:var(--crema); }
-.section-dark .section{ padding-top:0; }
 .eyebrow{ color:var(--rojo); margin-bottom:16px; display:block; }
 .section-dark .eyebrow{ color:var(--dorado); }
 .section-title{ font-family:var(--font-display); font-style:italic; font-size:clamp(2rem,4vw,2.8rem); line-height:1.1; margin:0 0 40px; }
@@ -168,6 +167,8 @@ button{ font:inherit; cursor:pointer; border:none; background:none; color:inheri
   display:flex; flex-direction:column; gap:14px; transition:transform .25s ease, box-shadow .25s ease;
 }
 .social-card:hover{ transform:translateY(-4px); box-shadow:var(--shadow-soft); }
+.social-photo{ margin:-28px -28px 4px; border-radius:2px 2px 0 0; overflow:hidden; height:160px; }
+.social-photo img{ width:100%; height:100%; object-fit:cover; }
 .social-card .icon{ width:30px; height:30px; color:var(--rojo); }
 .social-card h4{ margin:0; font-family:var(--font-display); font-style:italic; font-size:1.4rem; }
 .social-card p{ margin:0; font-size:.8rem; color:rgba(38,25,15,.6); }
